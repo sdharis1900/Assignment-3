@@ -1,0 +1,164 @@
+					Question no 1
+
+void main(){
+  List<dynamic> myNumbers = ["Ball()","Ball()","Ball()","Ball()","Ball()"];
+  List<dynamic> uniqueNumbers = myNumbers.toSet().toList();
+  print(uniqueNumbers);
+  
+  //Another Scenario
+  
+  List<dynamic> list_name=["Bilal","Ali","Owais","Bilal","Owais"];
+  
+    List<dynamic> unique_Names = list_name.toSet().toList();
+  print(unique_Names);
+}
+						Qusestion no 2
+
+void main(){
+  List<int> first = [1,2,3,4,5,6,7];
+List<int> second = [3,5,6,7,9,10];
+List<int> difference = first.toSet().difference(second.toSet()).toList();
+print(difference.toString());
+   
+}
+
+						Question no 3
+
+void main(){
+  
+ List<dynamic> a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100];
+ List<dynamic> b=[];
+  
+  for(var i in a)
+  {
+    if(i%2==0)
+    {
+      b.add(i);
+      
+    }
+  }
+   print(b);
+}
+
+						Question no 4
+
+void main(){
+  int i,m=0,flag=0;
+  int num = 5;
+  m=num~/2;
+  for(i = 2;i<=m;i++){
+    if(num%i == 0){
+      print('$num is not a prime number');
+     
+       }
+  }
+  if(flag==0){
+    print('$num is prime number');
+  }
+}
+
+						Question no 5
+
+void main() {
+  for (var i=1;i<=15;i++){
+    print("7 * $i = ${7*i}");
+  }
+}
+
+						Question no 6
+
+void main(){
+List<dynamic>  fruits=["Apple","Banana","Mango","Orange","Strawberry"];
+  
+  for(var i=0;i<fruits.length;i++)
+    print(fruits[i]);
+}
+
+						Question no 7
+
+void main(){
+  for (var i=1;i<=20;i++){
+    print(i*5);
+  }
+}
+
+						Question no 8
+
+void main(){
+  
+  //Celsius to farhenheit
+  
+  var cel = 35;
+  
+  var far=(cel*9/5)+32;
+  
+  print("Centigrade ${cel}C to Fahrenheit ${far}F");
+  
+  //Fahrenheit to Celsius
+  
+  var fahrenheit =95;
+  var celsius = (fahrenheit-32)*5/9;
+  print("Fahrenheit ${fahrenheit}F to Centigrade ${celsius}C");
+}
+
+						Question no 9
+
+void main(){
+  var first_number = 25;
+  var second_number = 20;
+  var operator = "%";
+  if(operator=="+")
+  {
+    print("${first_number} + ${second_number} = ${first_number+second_number}");
+  }
+  
+   else if(operator=="-")
+  {
+    print("${first_number} - ${second_number} = ${first_number-second_number}");
+  }
+  
+   else if(operator=="*")
+  {
+    print("${first_number} * ${second_number} = ${first_number*second_number}");
+  }
+  
+  else if(operator=="/")
+  {
+    print("${first_number} / ${second_number} = ${first_number/second_number}");
+  }
+  
+   else if(operator=="%")
+  {
+    print("${first_number} % ${second_number} = ${first_number%second_number}");
+  }
+}
+
+						Question no 10
+
+void main(){
+  var char = "b";
+  
+  if(char=="a"){
+    print(true);
+  }
+  
+  else if(char=="e"){
+    print(true);
+  }
+  
+  else if(char=="i"){
+    print(true);
+  }
+  
+  else if(char=="o"){
+    print(true);
+  }
+  
+  else if(char=="u"){
+    print(true);
+  }
+  
+  else{
+    print(false);
+  }
+}
